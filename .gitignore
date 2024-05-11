@@ -8,7 +8,7 @@
 
 
 #env
-/src/environments
+/src/environments/
 
 
 # Node
