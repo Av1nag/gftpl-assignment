@@ -1,0 +1,35 @@
+<h2 mat-dialog-title>Edit Dealer Info</h2>
+<mat-dialog-content>
+
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Placeholder" [(ngModel)]="name">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+
+  </p>
+
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>E-Mail</mat-label>
+      <input matInput placeholder="Placeholder" [(ngModel)]="email">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>GSTIN</mat-label>
+      <input matInput placeholder="Placeholder" [(ngModel)]="gstin">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close cdkFocusInitial>cancel</button>
+  <button mat-button mat-dialog-close cdkFocusInitial (click)="editDealer()">Ok</button>
+</mat-dialog-actions>
